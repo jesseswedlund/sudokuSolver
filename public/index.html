@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="./styleSudoku.css" />
+  </head>
+  <body>
+      <div class="box">
+        <div class="text">
+          <h1 class="title">Sudoku Solver</h1>
+          <div class="instructions">
+              <h3><span id="enter">Enter Sudoku Here:</span><span id="solved">Solved Sudoku:</span></h3>
+          </div>
+          <div class="sudokus">
+              <div id="sudokuEntry">
+              <div id="row1">
+                  <input id="cell1"></input><input id="cell2"></input><input id="cell3"></input>&nbsp;
+                  <input id="cell4"></input><input id="cell5"></input><input id="cell6"></input>&nbsp;
+                  <input id="cell7"></input><input id="cell8"></input><input id="cell9"></input>
+              </div>
+              <div id="row2">
+                <input id="cell10"></input><input id="cell11"></input><input id="cell12"></input>&nbsp;
+                <input id="cell13"></input><input id="cell14"></input><input id="cell15"></input>&nbsp;
+                <input id="cell16"></input><input id="cell17"></input><input id="cell18"></input>
+            </div>
+            <div id="row3">
+                <input id="cell19"></input><input id="cell20"></input><input id="cell21"></input>&nbsp;
+                <input id="cell22"></input><input id="cell23"></input><input id="cell24"></input>&nbsp;
+                <input id="cell25"></input><input id="cell26"></input><input id="cell27"></input>
+            </div>
+            <br class="rowbreak">
+            <div id="row4">
+                <input id="cell28"></input><input id="cell29"></input><input id="cell30"></input>&nbsp;
+                <input id="cell31"></input><input id="cell32"></input><input id="cell33"></input>&nbsp;
+                <input id="cell34"></input><input id="cell35"></input><input id="cell36"></input>
+            </div>
+            <div id="row5">
+                <input id="cell37"></input><input id="cell38"></input><input id="cell39"></input>&nbsp;
+                <input id="cell40"></input><input id="cell41"></input><input id="cell42"></input>&nbsp;
+                <input id="cell43"></input><input id="cell44"></input><input id="cell45"></input>
+            </div>
+            <div id="row6">
+                <input id="cell46"></input><input id="cell47"></input><input id="cell48"></input>&nbsp;
+                <input id="cell49"></input><input id="cell50"></input><input id="cell51"></input>&nbsp;
+                <input id="cell52"></input><input id="cell53"></input><input id="cell54"></input>
+            </div>
+            <br class="rowbreak">
+            <div id="row7">
+                <input id="cell55"></input><input id="cell56"></input><input id="cell57"></input>&nbsp;
+                <input id="cell58"></input><input id="cell59"></input><input id="cell60"></input>&nbsp;
+                <input id="cell61"></input><input id="cell62"></input><input id="cell63"></input>
+            </div>
+            <div id="row8">
+                <input id="cell64"></input><input id="cell65"></input><input id="cell66"></input>&nbsp;
+                <input id="cell67"></input><input id="cell68"></input><input id="cell69"></input>&nbsp;
+                <input id="cell70"></input><input id="cell71"></input><input id="cell72"></input>
+            </div>
+            <div id="row9">
+                <input id="cell73"></input><input id="cell74"></input><input id="cell75"></input>&nbsp;
+                <input id="cell76"></input><input id="cell77"></input><input id="cell78"></input>&nbsp;
+                <input id="cell79"></input><input id="cell80"></input><input id="cell81"></input>
+            </div>
+          </div>
+          <div><img id=arrow src="/images/arrow.png"> </div>
+          <div id="solvedSudoku">
+            <div id="solvedrow1">
+                <input readonly id="solvedCell1"></input><input readonly readonly id="solvedCell2"></input><input readonly id="solvedCell3"></input>&nbsp;
+                <input readonly id="solvedCell4"></input><input readonly id="solvedCell5"></input><input readonly id="solvedCell6"></input>&nbsp;
+                <input readonly id="solvedCell7"></input><input readonly id="solvedCell8"></input><input readonly id="solvedCell9"></input>
+            </div>
+            <div id="solvedrow2">
+              <input readonly id="solvedCell10"></input><input readonly id="solvedCell11"></input><input readonly id="solvedCell12"></input>&nbsp;
+              <input readonly id="solvedCell13"></input><input readonly id="solvedCell14"></input><input readonly id="solvedCell15"></input>&nbsp;
+              <input readonly id="solvedCell16"></input><input readonly id="solvedCell17"></input><input readonly id="solvedCell18"></input>
+            </div>
+            <div id="solvedrow3">
+              <input readonly id="solvedCell19"></input><input readonly id="solvedCell20"></input><input readonly id="solvedCell21"></input>&nbsp;
+              <input readonly id="solvedCell22"></input><input readonly id="solvedCell23"></input><input readonly id="solvedCell24"></input>&nbsp;
+              <input readonly id="solvedCell25"></input><input readonly id="solvedCell26"></input><input readonly id="solvedCell27"></input>
+            </div>
+            <br class="rowbreak">
+            <div id="solvedrow4">
+              <input readonly id="solvedCell28"></input><input readonly id="solvedCell29"></input><input readonly id="solvedCell30"></input>&nbsp;
+              <input readonly id="solvedCell31"></input><input readonly id="solvedCell32"></input><input readonly id="solvedCell33"></input>&nbsp;
+              <input readonly id="solvedCell34"></input><input readonly id="solvedCell35"></input><input readonly id="solvedCell36"></input>
+            </div>
+            <div id="solvedrow5">
+              <input readonly id="solvedCell37"></input><input readonly id="solvedCell38"></input><input readonly id="solvedCell39"></input>&nbsp;
+              <input readonly id="solvedCell40"></input><input readonly id="solvedCell41"></input><input readonly id="solvedCell42"></input>&nbsp;
+              <input readonly id="solvedCell43"></input><input readonly id="solvedCell44"></input><input readonly id="solvedCell45"></input>
+            </div>
+            <div id="solvedrow6">
+              <input readonly id="solvedCell46"></input><input readonly id="solvedCell47"></input><input readonly id="solvedCell48"></input>&nbsp;
+              <input readonly id="solvedCell49"></input><input readonly id="solvedCell50"></input><input readonly id="solvedCell51"></input>&nbsp;
+              <input readonly id="solvedCell52"></input><input readonly id="solvedCell53"></input><input readonly id="solvedCell54"></input>
+            </div>
+            <br class="rowbreak">
+            <div id="solvedrow7">
+              <input readonly id="solvedCell55"></input><input readonly id="solvedCell56"></input><input readonly id="solvedCell57"></input>&nbsp;
+              <input readonly id="solvedCell58"></input><input readonly id="solvedCell59"></input><input readonly id="solvedCell60"></input>&nbsp;
+              <input readonly id="solvedCell61"></input><input readonly id="solvedCell62"></input><input readonly id="solvedCell63"></input>
+            </div>
+            <div id="solvedrow8">
+              <input readonly id="solvedCell64"></input><input readonly id="solvedCell65"></input><input readonly id="solvedCell66"></input>&nbsp;
+              <input readonly id="solvedCell67"></input><input readonly id="solvedCell68"></input><input readonly id="solvedCell69"></input>&nbsp;
+              <input readonly id="solvedCell70"></input><input readonly id="solvedCell71"></input><input readonly id="solvedCell72"></input>
+            </div>
+            <div id="solvedrow9">
+              <input readonly id="solvedCell73"></input><input readonly id="solvedCell74"></input><input readonly id="solvedCell75"></input>&nbsp;
+              <input readonly id="solvedCell76"></input><input readonly id="solvedCell77"></input><input readonly id="solvedCell78"></input>&nbsp;
+              <input readonly id="solvedCell79"></input><input readonly id="solvedCell80"></input><input readonly id="solvedCell81"></input>
+            </div>
+          </div>
+          </div>
+          <br>
+          <br>
+              <button id="solve"><strong>SOLVE</strong></button>
+              <br>
+              <br>
+              <input readonly id="link" placeholder="Or press for a puzzle -->">
+              <!-- <input readonly id="link" placeholder="Or paste websudoku.com link"> -->
+              <button id="getSudoku"><strong>Get Sudoku</strong></button>
+              <button id="reset"><strong>RESET</strong></button>
+              <br>
+              <p id="message"><strong>Fill in known cells and leave unknown cells blank, then press SOLVE.</strong></p>
+        </div>
+      </div>
+    <script src="./sudokuSolver.js"></script>
+  </body>
+</html>
