@@ -120,7 +120,7 @@ input {
   padding-left: 10px;
   padding-right: 10px;
   position: relative;
-  left: 45px;
+  left: 60px;
   bottom: 55px;
   background-color: rgba(255, 232, 130, 0.555);
   border-radius: 5px;
@@ -131,7 +131,7 @@ input {
 #getSudoku {
   padding: 5px;
   position: relative;
-  right: 168px;
+  right: 182px;
   bottom: 55px;
   background-color: rgba(130, 255, 203, 0.555);
   border-radius: 5px;
@@ -142,7 +142,7 @@ input {
 #link {
   padding: 5px;
   position: relative;
-  right: 177px;
+  right: 187px;
   bottom: 55px;
   width: 200px;
   font-size: 11px;
