@@ -20,6 +20,7 @@
     "express": "^4.16.4",
     "express-session": "^1.17.1",
     "history": "^4.10.1",
+    "husky": "^5.0.9",
     "morgan": "^1.10.0",
     "pg": "^8.0.3",
     "pg-hstore": "^2.3.2",
